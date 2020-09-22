@@ -55,7 +55,8 @@ class Sidebar extends Component{
         <div className="sidebar-main-1">
             <span> Filter </span>
             <div className="sidebar">
-               <span> Lunch Year</span>
+               <span className="sp1"> Lunch Year</span>
+               <div class="vl"> <hr class="hr-line"></hr></div>
                 <div className="main-2">
                 {
                     launchYear.map(year => (
@@ -64,19 +65,25 @@ class Sidebar extends Component{
                         </div>
                     ))
                 }
-                {/* </div> */}
-                <span className="spacex-launch">Successful Launch</span>
-                  <hr />
-                {/* <div> */}
+
+                <div class="vl">
+                    <span className="su-l">Successful Launch</span>
+                    <hr class="hr-line"></hr>
+                 </div>
                 <div className="year-bt">
                     <button name="launch_success" value="true"  onClick = {this.handleFilter}>True</button>
+                </div>
+                <div className="year-bt">
                     <button name="launch_success" value="false"  onClick = {this.handleFilter}>False</button>
                 </div>
-                {/* </div> */}
-                <span>Successful Landing</span>
-                {/* <div> */}
+                <div class="vl">
+                    <span className="su-l">Successful Landing</span>
+                    <hr class="hr-line"></hr>
+                </div>
                 <div className="year-bt">
                     <button name="land_success" value="true"  onClick = {this.handleFilter}>True</button>
+                </div>
+                <div className="year-bt">
                     <button name="land_success" value="false" onClick = {this.handleFilter}>False</button>
                 </div>
                 </div>

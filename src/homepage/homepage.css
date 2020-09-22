@@ -26,7 +26,7 @@
       flex-wrap: wrap;
       /* justify-content: center; */
   }
-  .year-bt{
+  .year-bt, .year-bt-s{
       width: 50%;
       margin: 10px 0px 10px 0px;
   }
@@ -37,11 +37,28 @@
     margin: 10px;
 
   }
+  .hr-line {
+    border-left: 6px solid green;
+    width: 140px;
+    margin: 4px 0px 0 40px;
+  }
   .space-la{
     font-weight: 600;
   }
-  h4{
-    /* width: min-content; */
+  button{
+    margin: 0 0 0 30px;
+    width: 70px;
+    padding: 4px;
+    background: #bdd256;
+    border-radius: 7px;
+  }
+  .sp1{
+     align-items: center;
+     margin: 60px
+  }
+   .su-l{
+    margin: 0 0 3px 50px;
+
   }
   .data{
     margin: 0 0 10px 0px;
@@ -56,6 +73,10 @@
 .spacex-launch{
   text-align: center;
 }
+hr.new5 {
+  border: 10px solid green;
+  border-radius: 5px;
+}
 
 @media only screen  and (max-width: 768px) {
   .App-logo {
@@ -68,6 +89,29 @@
     width: calc(100% - 24px);
     margin: 10px;
   }
+  button{
+    margin: 0 0 0 15px;
+    width: 50px;
+
+  }
+
+  .sp1{
+    align-items: center;
+    margin: 50px;
+ }
+ .su-l{
+   margin: 0 0 0 30px;
+
+ }
+ .hr-line {
+  border-left: 6px solid green;
+  /* height: 2px; */
+  width: 140px;
+  margin: 4px 0px 0 20px;
+ }
+ .vl{
+  width: 100%;
+ }
 }
 
 @media (min-width: 701px) and (max-width: 1024px) {
@@ -75,5 +119,26 @@
   .card{
     width: calc(50% - 24px);
   }
+  button{
+    margin: 0 0 0 0px;
+    width: 50px;
 
+  }
+
+  .sp1{
+    align-items: center;
+    margin: 20px;
+ }
+ .su-l{
+   margin: 0 0 0 10px;
+
+ }
+ .hr-line {
+    border-left: 6px solid green;
+    width: 100px;
+    margin: 0px 0px 0 0px;
+  }
+  .vl{
+    width: 100%;
+   }
 }
